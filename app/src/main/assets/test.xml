@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<ROOT>
+  <HEAD>
+    <UnitCode>PDSGJJ</UnitCode>
+    <ChanCode>ZFB</ChanCode>
+    <ReqTrsCent>10001</ReqTrsCent>
+    <ReqTrsBank>10001</ReqTrsBank>
+    <ReqTrsTell>10001</ReqTrsTell>
+    <ReqTrsTellName>10001</ReqTrsTellName>
+    <ReqDate>20170808</ReqDate>
+    <ReqTime>095121</ReqTime>
+    <TrsCode>2001</TrsCode>
+    <TrsChildCode>299</TrsChildCode>
+    <ReqSerial>000000</ReqSerial>
+    <Remark></Remark>
+  </HEAD>
+  <BODY>
+    <khbh></khbh>
+    <zjlx></zjlx>
+    <zjhm>41048219XX080800XX</zjhm>
+  </BODY>
+</ROOT>

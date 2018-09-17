@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huzhou.gjj">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logonew"
+        android:label="湖州公积金"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <!--<activity-->
+        <!--android:name=".acitivity.LoginActivity2"-->
+        <!--android:label="湖州公积金"-->
+        <!--android:theme="@style/AppTheme.NoActionBar"-->
+        <!--android:windowSoftInputMode="stateHidden|adjustResize"-->
+        <!--&gt;-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+
+        <!--</activity>-->
+        <!--<activity-->
+        <!--android:name=".acitivity.LoginActivity3"-->
+        <!--android:label=""-->
+        <!--android:theme="@style/AppTheme.NoActionBar"-->
+        <!--android:windowSoftInputMode="stateHidden|adjustResize"-->
+        <!--/>-->
+
+        <!--<activity-->
+        <!--android:name=".acitivity.LoginActivityjy"-->
+        <!--android:label=""-->
+        <!--android:theme="@style/loading_dialog"-->
+        <!--android:windowSoftInputMode="stateHidden|adjustResize">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW"/>-->
+
+        <!--<category android:name="android.intent.category.DEFAULT"/>-->
+        <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+
+        <!--<data-->
+        <!--android:host="splash"-->
+        <!--android:scheme="cundong"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".acitivity.DotDistributionActivity"
+            android:label="@string/dotDistributionActivity"/>
+        <activity
+            android:name=".acitivity.DotDistributionActivity2"
+            android:label="@string/dotDistributionActivity"/>
+        <activity
+            android:name=".acitivity.DotQueueActivity"
+            android:label="@string/dotQueueActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.UserGuideActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".acitivity.MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".acitivity.NewsActivity"
+            android:label="@string/newsActivity"/>
+
+        <activity
+            android:name=".acitivity.HkjhActivity"
+            android:label="@string/hkjh"/>
+
+        <activity
+            android:name=".acitivity.NewsSingleActivity"
+            android:label="@string/newsSingleActivity"/>
+
+        <activity
+            android:name=".acitivity.DetailActivity"
+            android:label="@string/detailActivity"/>
+        <activity
+            android:name=".acitivity.ChangeActivity"
+            android:label="@string/changeActivity"/>
+        <activity
+            android:name=".acitivity.ConsultActivity"
+            android:label="@string/consultActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.ScheduleActivity"
+            android:label="@string/scheduleActivity"/>
+        <activity
+            android:name=".acitivity.PhoneChangeActivity"
+            android:label="@string/phoneChangeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.BindingActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".acitivity.AuthorizationActivity"
+            android:label="@string/authorizationActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.PayActivity"
+            android:label="@string/payActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.AddCardActivity"
+            android:label="@string/activity_add_card"/>
+        <activity
+            android:name=".acitivity.LoanMessageActivity"
+            android:label="@string/loanMessageActivity"/>
+        <activity
+            android:name=".acitivity.LoginActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <activity
+            android:name=".acitivity.UserInfoActivity"
+            android:label="@string/userInfoActivity2"/>
+        <activity
+            android:name=".acitivity.LoanHistoryActivity"
+            android:label="@string/loanHistoryActivity"/>
+        <activity
+            android:name=".acitivity.DetailMoreActivity"
+            android:label="@string/detailMoreActivity"/>
+        <activity
+            android:name=".acitivity.ChangeMoreActivity"
+            android:label="@string/changeMoreActivity"/>
+        <activity
+            android:name=".acitivity.RegisterActivity"
+            android:label="@string/registerActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.ForgetActivity"
+            android:label="@string/forgetActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.FindCompanyActivity"
+            android:label="@string/findCompanyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.FindKfActivity"
+            android:label="@string/findKfActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.ZhiXunActivity"
+            android:label="@string/zhiXunActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.ZhiXunActivity2"
+            android:label="@string/zhiXunActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".acitivity.AdvanceActivity"
+            android:label="@string/advanceActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name=".acitivity.FuturePlanActivity"
+            android:label="@string/futureplan"/>
+
+        <receiver android:name=".reciver.InternetReciver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".reciver.DownloadService"/>
+
+
+    </application>
+
+</manifest>

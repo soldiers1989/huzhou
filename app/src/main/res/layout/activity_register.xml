@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/zjlx" />
+
+                <Spinner
+                    android:id="@+id/login_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/gjjzh" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/regis_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsrgjjzh"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/zjhm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/regiscard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsryhzjh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/name" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/regisname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsrndxm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/dlm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsrdlm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/mm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsrmm"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/zcqrmm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/re_pass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qrmm"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/cxmm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/findpass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/znwsz"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/sjhm" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical">
+
+                    <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                        android:id="@+id/regisphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/qsrsjhm"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/code_get"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button2"
+                        android:text="@string/hqyzm"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/five">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/yzm" />
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/phone_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qsryzm"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/detail_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fifty"
+                android:layout_marginRight="@dimen/fifty"
+                android:layout_marginTop="@dimen/thirty"
+                android:background="@drawable/button"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/twenty"
+                android:padding="@dimen/twenty"
+                android:text="@string/sm"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

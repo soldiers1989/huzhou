@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="loan_year">
+        <item>1年(12期)</item>
+        <item>2年(24期)</item>
+        <item>3年(36期)</item>
+        <item>4年(48期)</item>
+        <item>5年(60期)</item>
+        <item>6年(72期)</item>
+        <item>7年(84期)</item>
+        <item>8年(96期)</item>
+        <item>9年(108期)</item>
+        <item>10年(120期)</item>
+        <item>11年(132期)</item>
+        <item>12年(144期)</item>
+        <item>13年(156期)</item>
+        <item>14年(168期)</item>
+        <item>15年(180期)</item>
+        <item>16年(192期)</item>
+        <item>17年(204期)</item>
+        <item>18年(216期)</item>
+        <item>19年(228期)</item>
+        <item>20年(240期)</item>
+
+        <item>21年(252期)</item>
+        <item>22年(264期)</item>
+        <item>23年(276期)</item>
+        <item>24年(288期)</item>
+        <item>25年(300期)</item>
+        <item>26年(312期)</item>
+        <item>27年(324期)</item>
+        <item>28年(336期)</item>
+        <item>29年(348期)</item>
+        <item>30年(360期)</item>
+    </string-array>
+    <string-array name="is_twe">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    <string-array name="loan_fs">
+        <item>等额本息</item>
+        <item>等额本金</item>
+    </string-array>
+
+    <string-array name="fw_mj">
+        <item>90平米以上</item>
+        <item>90(含)平米以下</item>
+    </string-array>
+    <string-array name="xb">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="fwxz">
+        <item>期房</item>
+        <item>现房</item>
+        <item>二手房</item>
+    </string-array>
+
+    <string-array name="tdxz">
+        <item>行政划拨</item>
+        <item>有偿出让</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="gfdz">
+        <item>中心城区</item>
+        <item>县区首位城镇</item>
+        <item>其他城镇</item>
+    </string-array>
+
+    <string-array name="sjkd">
+        <item>1个月内</item>
+        <item>3个月内</item>
+        <item>6个月内</item>
+    </string-array>
+
+    <string-array name="city_address">
+        <item>湖州市</item>
+    </string-array>
+    <string-array name="address">
+        <item>安吉县</item>
+        <item>长兴县</item>
+        <item>德清县</item>
+        <item>南浔区</item>
+        <item>吴兴区</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

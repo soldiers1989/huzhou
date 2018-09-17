@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/detail_bg"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:scaleType="centerCrop">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twenty"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirty"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dqr"/>
+
+                <TextView
+
+                    android:id="@+id/loan_name"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/jqhtbh"/>
+
+                <TextView
+                    android:id="@+id/loan_id"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/zxbh"/>
+
+                <TextView
+                    android:id="@+id/cen_id"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/jgbh"/>
+
+                <TextView
+                    android:id="@+id/jigou_id"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dkxz"/>
+
+                <TextView
+                    android:id="@+id/loan_xz"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dkje"/>
+
+                <TextView
+                    android:id="@+id/loan_money"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/hkfs"/>
+
+                <TextView
+                    android:id="@+id/hun_fs"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/wtyh"/>
+
+                <TextView
+                    android:id="@+id/wt_bank"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dkdqzt"/>
+
+                <TextView
+                    android:id="@+id/now_zt"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/gfaddress"/>
+
+                <TextView
+                    android:id="@+id/gf_address"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/five"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/fwlx"/>
+
+                <TextView
+                    android:id="@+id/fw_type"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dqhjzzybh"/>
+
+                <TextView
+                    android:id="@+id/czy_id"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/dkjd"/>
+
+                <TextView
+                    android:id="@+id/loan_progress"
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/five"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/one"
+                android:background="@color/color_tv_tittle_white"
+                android:orientation="horizontal"
+                android:padding="@dimen/ten">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="贷款进度："/>
+
+                <TextView
+                    style="@style/my_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_tv_tittle_white"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

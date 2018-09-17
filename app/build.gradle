@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.huzhou.gjj"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation files('libs/commons-logging-1.1.1.jar')
+    implementation files('libs/gson-2.3.1.jar')
+    implementation files('libs/zmxy-sdk-java-20170824171455.jar')
+    implementation 'com.jude:rollviewpager:1.4.5'
+    implementation 'com.avast:android-styled-dialogs:2.3.3'
+    implementation 'in.srain.cube:ptr-load-more:1.0.6'
+    implementation 'com.airsaid.library:pickerview:1.0.3'
+    implementation 'org.xutils:xutils:3.3.38'
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:2.4.0"
+
+}

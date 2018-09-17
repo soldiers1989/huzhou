@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/detail_bg"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddb2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="业务网点名称"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="网点地址"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系电话"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ddb1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddb3"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="市中心直属业务部"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="湖州市吴兴区府庙商城7号楼"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:text="12329"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ddb1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/ddb2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="南浔区管理部"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="南浔镇香山路158号"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:text="3918284"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ddb1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddb3"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="德清县分中心"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="德清县武康镇新丰南路58号"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:text="8060405"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ddb1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddb2"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="长兴县分中心"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="长兴县太湖街道长兴大道666号(长兴民防大楼二楼)"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:text="6033515"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ddb1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ddb3"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="安吉县分中心"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="安吉县递铺镇昌硕东路252号"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ddb1"/>
+
+        <TextView
+            style="@style/ddb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:text="5025749 5125258 5122778 5707822"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+</LinearLayout>

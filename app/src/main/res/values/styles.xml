@@ -1,0 +1,113 @@
+<resources>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/dialog_load_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="my_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/five</item>
+    </style>
+
+    <style name="my_style2">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/fifteen</item>
+    </style>
+
+    <style name="new_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fourteen</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimary">@color/color_tv_tittle_white</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorPrimaryDark">@color/black_overlay</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+    </style>
+
+    <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+
+    <!--<style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">-->
+    <!--<item name="titleTextStyle">@style/MyTitleTextStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+    <!--<item name="android:textSize">18sp</item>-->
+    <!--<item name="android:textColor">@color/bt_xian</item>-->
+    <!--</style>-->
+
+
+    <style name="JayneHatDialogTheme" parent="SDL.Dialog">
+        <item name="sdlTextPrimaryColor">@color/jayne_text_primary_light</item>
+        <item name="sdlTextSecondaryColor">@color/jayne_text_secondary_light</item>
+        <item name="sdlDividerColor">@color/jayne_divider_light</item>
+        <item name="sdlPressedColor">@color/jayne_pressed_light</item>
+        <item name="colorAccent">@color/jayne_accent</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="my_bar" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="ddb">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:textSize">@dimen/fifteen</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="progress_dialog_theme" parent="android:Theme.Dialog">
+
+        <!--个说明提示框是否有边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--提示框是否有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--示框的背景颜色-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--提示框是否是浮动的-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--提示框是滞是透明的-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--&lt;!&ndash;背景是否模糊显示&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+    </style>
+
+</resources>

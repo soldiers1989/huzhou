@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_tv_tittle_white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/fifteen"
+            android:paddingRight="@dimen/fifteen"
+            android:paddingTop="@dimen/fifteen">
+
+            <TextView
+                style="@style/new_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/tzgjz"
+                android:textColor="@android:color/black" />
+
+            <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                android:id="@+id/gjz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/qsrgjz"
+                android:lines="1"
+                android:maxLength="12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/one"
+            android:background="@color/color_tv_tittle_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen">
+
+            <TextView
+                style="@style/new_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/ksrq"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/start_date_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/header_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/one"
+            android:background="@color/color_tv_tittle_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen">
+
+            <TextView
+                style="@style/new_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/jsrq"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/end_date_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/header_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/detail_find_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifty"
+        android:layout_marginRight="@dimen/fifty"
+        android:layout_marginTop="@dimen/thirty"
+        android:background="@drawable/button"
+        android:text="@string/chaxun"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twenty_sp" />
+
+    <com.huzhou.gjj.viewUtils.MyListView
+        android:id="@+id/xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/five"
+        android:layout_marginTop="@dimen/ten"
+        android:divider="#E8C2C6"
+        android:dividerHeight="@dimen/one" />
+
+</LinearLayout>

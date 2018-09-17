@@ -1,0 +1,276 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fitsSystemWindows="true"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户登陆"
+            android:textColor="@color/bt_xian"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/face_login"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/fifteen"
+            android:contentDescription="@string/app_name"
+            android:gravity="bottom"
+            android:src="@mipmap/face"
+            android:visibility="gone"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/bt_xian"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xian"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twenty"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:layout_margin="@dimen/ten"-->
+            <!--android:background="@drawable/button3"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:src="@mipmap/logo_blue1"-->
+            <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/loginnew"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/cuerrt_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:gravity="center"
+                android:textColor="@color/tool_bar"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@drawable/button3"
+                android:visibility="gone"
+                >
+
+                <Spinner
+                    android:id="@+id/login_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/button3"
+                android:padding="@dimen/ten"
+                android:visibility="gone"
+                >
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+
+                    android:id="@+id/usercard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:background="@null"
+                    android:hint="@string/qsryhzjh"
+                    android:maxLength="19"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/button3"
+                android:padding="@dimen/ten"
+                >
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:background="@null"
+                    android:hint="请输入你的姓名"
+                    android:maxLength="5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/button3"
+                android:padding="@dimen/ten"
+                >
+
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:background="@null"
+                    android:digits="0123456789Xx"
+                    android:hint="请输入身份证号码"
+                    android:maxLength="19"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/five"
+                android:background="@drawable/button3"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <!--&lt;!&ndash;330502196206050649&ndash;&gt;330501197804250411-->
+                <com.huzhou.gjj.viewUtils.ClearWriteEditText
+                    android:id="@+id/yzm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/qsryzm"
+                    android:maxLength="4"
+                    android:maxLines="1"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/twenty"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical">
+
+                    <com.huzhou.gjj.viewUtils.CheckView
+                        android:id="@+id/checkview"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twenty"
+                android:background="@drawable/button"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/forget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:layout_weight="1"
+                    android:background="@drawable/button3"
+                    android:gravity="center"
+                    android:padding="@dimen/ten"
+                    android:text="@string/xgmm"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/regis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_weight="1"
+                    android:background="@drawable/button3"
+                    android:gravity="center"
+                    android:padding="@dimen/ten"
+                    android:text="@string/register"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="@dimen/fifteen_sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_marginTop="@dimen/twenty"
+                android:paddingBottom="@dimen/ten"
+                android:text="@string/sm"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

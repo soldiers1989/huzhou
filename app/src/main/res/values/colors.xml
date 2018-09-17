@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#185AAA</color>
+    <color name="colorPrimaryDark">#185AAA</color>
+    <color name="colorAccent">#185AAA</color>
+    <color name="tool_bar">#185AAA</color>
+    <!-- <color name="tool_bar">#FB7299</color>-->
+    <color name="black_overlay">#000000</color>
+    <color name="pressed">#B85671</color>
+    <color name="header_bg">#185AAA</color>
+    <color name="color_tv_tittle_white">#FFFFFF</color>
+    <color name="detail_bg">#EFEFF4</color>
+
+    <!-- custom jayne's hat dialog theme: -->
+    <color name="jayne_text_primary_light">#e8ffb300</color>
+    <color name="jayne_text_secondary_light">#e9b65b00</color>
+    <color name="jayne_divider_light">#1fff002b</color>
+    <color name="jayne_pressed_light">#c74e2c00</color>
+    <color name="jayne_accent">#f42e35</color>
+
+    <color name="jindu">#008000</color>
+    <color name="jindu2">#BBBBBB</color>
+
+
+    <color name="ddb1">#A9C6C9</color>
+    <color name="ddb2">#C3DDE0</color>
+    <color name="ddb3">#D3E2E4</color>
+
+    <color name="xian">#CCCCCC</color>
+    <color name="bt_xian">#0066cc</color>
+
+
+</resources>

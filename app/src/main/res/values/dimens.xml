@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="one">1dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+
+    <dimen name="fourteen">14dp</dimen>
+    <!--textSize-->
+    <dimen name="fifteen">15dp</dimen>
+    <!--btnSize-->
+    <dimen name="twenty">20dp</dimen>
+    <!--layout_marginTop-->
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+
+
+    <dimen name="fourteen_sp">14sp</dimen>
+    <!--textSize-->
+    <dimen name="fifteen_sp">15sp</dimen>
+    <!--btnSize-->
+    <dimen name="twenty_sp">20sp</dimen>
+    <!--layout_marginTop-->
+</resources>

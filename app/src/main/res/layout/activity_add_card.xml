@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:padding="@dimen/ten"
+            android:text="@string/add_card_kfyh"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <Spinner
+            android:id="@+id/bank_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/five"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:padding="@dimen/ten"
+            android:text="@string/add_card_yhkh"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <com.huzhou.gjj.viewUtils.ClearWriteEditText
+            android:id="@+id/bank_id"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/forty"
+            android:layout_marginRight="@dimen/five"
+            android:layout_weight="2"
+            android:background="@android:color/white"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="19" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/detail_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty"
+        android:layout_marginRight="@dimen/thirty"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@drawable/button"
+        android:padding="@dimen/ten"
+        android:text="@string/add_card_add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twenty_sp" />
+
+</LinearLayout>

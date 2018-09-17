@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <Button
+            android:id="@+id/old_loan_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button2"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="原贷款信息"
+            android:textColor="@android:color/white" />
+
+
+        <include
+            android:id="@+id/activity_advance_oldmsg"
+            layout="@layout/activity_advance_oldmsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/yinghuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/old_loan_msg"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="本期还款"
+            android:textColor="@android:color/white" />
+
+
+        <include
+            android:id="@+id/activity_advance_yinghuan"
+            layout="@layout/activity_advance_yinghuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yinghuan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button2"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="账户信息"
+            android:textColor="@android:color/white" />
+
+        <include
+            android:id="@+id/activity_advance_userinfo"
+            layout="@layout/activity_advance_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+            <Button
+                android:id="@+id/tiqian_loan_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="提前还款信息"
+                android:textColor="@android:color/white" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/activity_advance_tiqian"
+                layout="@layout/activity_advance_tiqian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
